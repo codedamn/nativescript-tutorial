@@ -1,0 +1,11 @@
+npm-debug.log
+.DS_Store
+e2e/reports/
+hooks/
+lib/
+node_modules/
+platforms/
+tmp/
+typings/
+report/
+test-results.xml
