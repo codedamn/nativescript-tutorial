@@ -1,10 +1,13 @@
-<Page class="page" navigatingTo="myFunction">
-    <Page.actionBar>
-        <ActionBar title="Hey" class="action-bar">
-        </ActionBar>
-    </Page.actionBar>
+<Page>
+	<Page.actionBar>
+		<ActionBar title="This is my first actionbar"></ActionBar>
+	</Page.actionBar>
 
-    <StackLayout>
-        <Label text="{{ message }}"></Label>
-    </StackLayout>
+	<AbsoluteLayout>
+		<Button text="My first button" left="100" top="100"></Button>
+		<Button text="My first button" left="100" top="200"></Button>
+		<Button text="My first button" left="200" top="100"></Button>
+		<Button text="My first button" left="200" top="200"></Button>
+		<Label text="Label" left="100" top="500"></Label>
+	</AbsoluteLayout>
 </Page>
