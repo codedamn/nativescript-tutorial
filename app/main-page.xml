@@ -3,11 +3,9 @@
 		<ActionBar title="This is my first actionbar"></ActionBar>
 	</Page.actionBar>
 
-	<AbsoluteLayout>
-		<Button text="My first button" left="100" top="100"></Button>
-		<Button text="My first button" left="100" top="200"></Button>
-		<Button text="My first button" left="200" top="100"></Button>
-		<Button text="My first button" left="200" top="200"></Button>
-		<Label text="Label" left="100" top="500"></Label>
-	</AbsoluteLayout>
+	<StackLayout orientation="vertical" width="100" backgroundColor="blue">
+		<Label text="first elem" backgroundColor="yellow" height="200" />
+		<Label text="second elem" backgroundColor="red" />
+		<Label text="third elem" backgroundColor="green" />
+	</StackLayout>
 </Page>
