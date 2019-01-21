@@ -3,9 +3,9 @@
 		<ActionBar title="This is my first actionbar"></ActionBar>
 	</Page.actionBar>
 
-	<GridLayout rows="100,100,*" columns="10,*,10">
-		<Label text="First child" row="0" col="1" backgroundColor="yellow" />
-		<Label text="Second child" row="1" col="1" backgroundColor="blue" />
-		<Label text="Third child" row="2" col="1" backgroundColor="green" />
-	</GridLayout>
+	<FlexboxLayout flexDirection="column" backgroundColor="#eee" justifyContent="center" alignItems="center">
+		<TextField hint="Enter username" marginBottom="30" />
+		<TextField hint="Enter password" secure="true" marginBottom="30" />
+		<Button text="Login"></Button>
+	</FlexboxLayout>
 </Page>
