@@ -3,11 +3,9 @@
 		<ActionBar title="This is my first actionbar"></ActionBar>
 	</Page.actionBar>
 
-	<FlexboxLayout flexWrap="wrap" flexDirection="row" height="500" backgroundColor="blue">
-		<Label text="First Child" width="100" height="100" backgroundColor="green" />
-		<Label text="Second Child" width="100" height="100" backgroundColor="red" />
-		<Label text="Thrid Child" width="100" height="100" backgroundColor="yellow" />
-		<Label text="Fourth Child" width="100" height="100" backgroundColor="purple" />
-		<Label text="Fourth Child" width="100" height="100" backgroundColor="orange" />
-	</FlexboxLayout>
+	<GridLayout rows="100,100,*" columns="10,*,10">
+		<Label text="First child" row="0" col="1" backgroundColor="yellow" />
+		<Label text="Second child" row="1" col="1" backgroundColor="blue" />
+		<Label text="Third child" row="2" col="1" backgroundColor="green" />
+	</GridLayout>
 </Page>
