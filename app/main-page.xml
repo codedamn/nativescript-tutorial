@@ -1,11 +1,11 @@
-<Page>
+<Page loaded="onLoaded">
 	<Page.actionBar>
 		<ActionBar title="This is my first actionbar"></ActionBar>
 	</Page.actionBar>
 
 	<FlexboxLayout flexDirection="column" backgroundColor="#eee" justifyContent="center" alignItems="center">
-		<TextField hint="Enter username" marginBottom="30" />
-		<TextField hint="Enter password" secure="true" marginBottom="30" />
+		<TextField hint="Enter username" text="{{ username }}" marginBottom="30" />
+		<Label text="{{ username }}"></Label>
 		<Button text="Login"></Button>
 	</FlexboxLayout>
 </Page>
