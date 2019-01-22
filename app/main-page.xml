@@ -5,7 +5,7 @@
 
 	<FlexboxLayout flexDirection="column" backgroundColor="#eee" justifyContent="center" alignItems="center">
 		<TextField hint="Enter username" text="{{ username }}" marginBottom="30" />
-		<Label text="{{ username }}"></Label>
-		<Button text="Login"></Button>
+		<TextField hint="Enter password" secure="true" text="{{ password }}" marginBottom="30" />
+		<Button text="Login" tap="onTap"></Button>
 	</FlexboxLayout>
 </Page>

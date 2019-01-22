@@ -1,11 +1,18 @@
-const { Observable } = require('tns-core-modules/data/observable')
+const { fromObject } = require('tns-core-modules/data/observable')
+
+const model = {
+	username: "admin",
+	password: "admin"
+}
+
+const bindingContext = fromObject(model)
 
 exports.onLoaded = args => {
 	const page = args.object
 
-	const model = new Observable() // { }
+	page.bindingContext = bindingContext
+}
 
-	model.set("username", "admin")
-
-	page.bindingContext = model
+exports.onTap = args => {
+	alert(`${bindingContext.get('username')} and ${bindingContext.get('password')}`)
 }
