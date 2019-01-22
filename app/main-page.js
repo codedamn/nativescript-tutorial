@@ -1,15 +1,11 @@
+const { Observable } = require('tns-core-modules/data/observable')
+
 exports.onLoaded = args => {
 	const page = args.object
 
-	page.bindingContext = {
-		username: "admin"
-	}
+	const model = new Observable() // { }
 
-	let i = 0
+	model.set("username", "admin")
 
-	setInterval(() => {
-		page.bindingContext = {
-			username: `admin${i++}`
-		}
-	}, 1000)
+	page.bindingContext = model
 }
