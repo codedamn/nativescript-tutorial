@@ -1,11 +1,13 @@
-const { fromObject } = require('tns-core-modules/data/observable')
+const { fromObjectRecursive } = require('tns-core-modules/data/observable')
 
 const model = {
-	username: "admin",
-	password: "admin"
+	user: {
+		username: "admin",
+		password: "admin"
+	}
 }
 
-const bindingContext = fromObject(model)
+const bindingContext = fromObjectRecursive(model)
 
 exports.onLoaded = args => {
 	const page = args.object
@@ -14,5 +16,5 @@ exports.onLoaded = args => {
 }
 
 exports.onTap = args => {
-	alert(`${bindingContext.get('username')} and ${bindingContext.get('password')}`)
+	alert(`${bindingContext.get('user').username} and ${bindingContext.get('user').password}`)
 }
