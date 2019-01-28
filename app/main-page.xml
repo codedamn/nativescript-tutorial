@@ -3,10 +3,5 @@
 		<ActionBar title="This is my first actionbar"></ActionBar>
 	</Page.actionBar>
 
-	<FlexboxLayout flexDirection="column" backgroundColor="#eee" justifyContent="center" alignItems="center">
-		<TextField hint="Enter username" text="{{ user.username }}" marginBottom="30" />
-		<TextField hint="Enter password" secure="true" text="{{ user.password }}" marginBottom="30" />
-		<Label text="{{ user.username }}"></Label>
-		<Button text="Login" tap="onTap"></Button>
-	</FlexboxLayout>
+	<Button text="Navigate to another page" tap="onTap"></Button>
 </Page>
